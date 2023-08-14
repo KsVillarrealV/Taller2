@@ -1,23 +1,26 @@
 import javax.swing.JOptionPane;
 
 public class conversor {
-    public double PColombiano;
-    public double Dolares;
-    public double cantidad;
+    public float ValorBase;
+    public float valor;
     public double total;
     
     
-    public conversor (double cantidad, double total){
-        this. PColombiano = ;
+    
+    public conversor (float cantidad){
+        this. valor = cantidad;
+        this.ValorBase=(float)3961.51;
+
 
     }
 
     public void PESO_A_DOLAR(){
-        total = cantidad / Dolares;
-        JOptionPane.showMessageDialog(null, "El valor en dolares es: " + total );
+        float dolares = valor / ValorBase;
+        JOptionPane.showMessageDialog(null, "El valor en dolares es: " + (Float)dolares);
     }
 
     public void DOLAR_A_PESO (){
-        total = cantidad *
+        float pesos = valor * ValorBase;
+        JOptionPane.showMessageDialog(null, "El valor en pesos Colombianos es: " + (Float)pesos);
     }
 }
